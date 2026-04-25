@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class BookTest {
     @Test
-    public void shouldBePossibleToInstantiateBook() throws EmptyAuthorListException {
+    public void shouldBePossibleToInstantiateBook() {
         Book book = new Book("The Great Gatsby", "F. Scott Fitzgerald", true);
         assertEquals("The Great Gatsby", book.getTitle());
         assertEquals("F. Scott Fitzgerald", book.getAuthor());

@@ -1,0 +1,60 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-classpath
+'C:/Users/karis/.m2/repository/org/openjfx/javafx-base/21.0.11/javafx-base-21.0.11.pom;C:/Users/karis/.m2/repository/org/openjfx/javafx-base/21.0.11/javafx-base-21.0.11-win.jar;C:/Users/karis/.m2/repository/org/openjfx/javafx-fxml/21.0.11/javafx-fxml-21.0.11.pom;C:/Users/karis/.m2/repository/org/openjfx/javafx-fxml/21.0.11/javafx-fxml-21.0.11-win.jar;C:/Users/karis/.m2/repository/org/openjfx/javafx-controls/21.0.11/javafx-controls-21.0.11.jar;C:/Users/karis/.m2/repository/org/openjfx/javafx-controls/21.0.11/javafx-controls-21.0.11.pom;C:/Users/karis/.m2/repository/org/openjfx/javafx-controls/21.0.11/javafx-controls-21.0.11-win.jar;C:/Users/karis/.m2/repository/org/openjfx/javafx-graphics/21.0.11/javafx-graphics-21.0.11.jar;C:/Users/karis/.m2/repository/org/openjfx/javafx-graphics/21.0.11/javafx-graphics-21.0.11-win.jar;C:/Users/karis/.m2/repository/org/openjfx/javafx-base/21.0.11/javafx-base-21.0.11.jar'
+-encoding
+'UTF-8'
+-protected
+--release
+21
+-sourcepath
+'C:/Users/karis/Documents/java_projects/HBV202G-SWC-Project/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/karis/Documents/java_projects/HBV202G-SWC-Project/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'HBV202G SWC Project 2.0.0 API'
+-use
+-version
+-windowtitle
+'HBV202G SWC Project 2.0.0 API'
+is.hi.hbv202g.assignment8
+C:\Users\karis\.m2\repository\org\openjfx\javafx-base\21.0.11\javafx-base-21.0.11.pom = 1777128484800
+C:\Users\karis\.m2\repository\org\openjfx\javafx-base\21.0.11\javafx-base-21.0.11-win.jar = 1777128486369
+C:\Users\karis\.m2\repository\org\openjfx\javafx-fxml\21.0.11\javafx-fxml-21.0.11.pom = 1777128485627
+C:\Users\karis\.m2\repository\org\openjfx\javafx-fxml\21.0.11\javafx-fxml-21.0.11-win.jar = 1777128486174
+C:\Users\karis\.m2\repository\org\openjfx\javafx-controls\21.0.11\javafx-controls-21.0.11.jar = 1777128485994
+C:\Users\karis\.m2\repository\org\openjfx\javafx-controls\21.0.11\javafx-controls-21.0.11.pom = 1777128484810
+C:\Users\karis\.m2\repository\org\openjfx\javafx-controls\21.0.11\javafx-controls-21.0.11-win.jar = 1777128487327
+C:\Users\karis\.m2\repository\org\openjfx\javafx-graphics\21.0.11\javafx-graphics-21.0.11.jar = 1777128486152
+C:\Users\karis\.m2\repository\org\openjfx\javafx-graphics\21.0.11\javafx-graphics-21.0.11-win.jar = 1777128487525
+C:\Users\karis\.m2\repository\org\openjfx\javafx-base\21.0.11\javafx-base-21.0.11.jar = 1777128486312
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\src\main\java = 1776956815955
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\allclasses-index.html = 1777155805519
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\allpackages-index.html = 1777155805521
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\copy.svg = 1777155805664
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\element-list = 1777155805206
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\help-doc.html = 1777155805635
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\index-all.html = 1777155805593
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\index.html = 1777155805611
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\link.svg = 1777155805681
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\member-search-index.js = 1777155805540
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\module-search-index.js = 1777155805530
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\overview-tree.html = 1777155805462
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\package-search-index.js = 1777155805530
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\script.js = 1777155805658
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\search-page.js = 1777155805697
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\search.html = 1777155805608
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\search.js = 1777155805691
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\serialized-form.html = 1777155805279
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\stylesheet.css = 1777155805654
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\tag-search-index.js = 1777155805542
+C:\Users\karis\Documents\java_projects\HBV202G-SWC-Project\target\reports\apidocs\type-search-index.js = 1777155805536

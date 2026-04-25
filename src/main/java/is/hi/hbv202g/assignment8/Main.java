@@ -16,15 +16,24 @@ import javafx.beans.binding.Bindings;
 
 public class Main extends Application {
 
+    Book book1, book2, book3;
+
     LibrarySystem myLibrarySystem = new LibrarySystem();
-    Book book1 = new Book("The Great Gatsby", "F. Scott Fitzgerald", true);
-    Book book2 = new Book("To Kill a Mockingbird", "Harper Lee", true);
-    Book book3 = new Book("1984", "George Orwell", true);
 
-
-
-@Override
+    //method to add some books to the library system and UI; throws an exception if a book cannot be added
+    public void addBooks() throws UserOrBookDoesNotExistException {
+    myLibrarySystem.addBook("The Great Gatsby","F. Scott Fitzgerald", true);
+    myLibrarySystem.addBook("To Kill a Mockingbird", "Harper Lee", true);
+    myLibrarySystem.addBook("1984", "George Orwell", true);
+        book1 = myLibrarySystem.findBookByTitle("The Great Gatsby");
+        book2 = myLibrarySystem.findBookByTitle("To Kill a Mockingbird");
+        book3 = myLibrarySystem.findBookByTitle("1984");
+    }
+    //JavaFX application start method; sets up the UI for the library system, including a table view of books and buttons for loans and users.
+    @Override
     public void start(Stage primaryStage) throws Exception {
+
+        addBooks();
 
         TableView<Book> tblBooks = new TableView<>();
         tblBooks.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
@@ -43,18 +52,16 @@ public class Main extends Application {
             colTitle, colAuthor, colAvailable
         );
 
-        tblBooks.getItems().addAll(
+        tblBooks.getItems().addAll(book1, book2, book3);
 
-        );
-
-        Button btnLoans = new Button("Inventory");
-        Button btn = new Button("Tax");
+        Button btnLoans = new Button("Loans");
+        Button btnUsers = new Button("Users");
 
         btnLoans.disableProperty().bind(
             tblBooks.getSelectionModel().selectedItemProperty().isNull()
         );
 
-        btn.disableProperty().bind(
+        btnUsers.disableProperty().bind(
             tblBooks.getSelectionModel().selectedItemProperty().isNull().or(
                     Bindings.select(
                         tblBooks.getSelectionModel().selectedItemProperty(),
@@ -63,7 +70,7 @@ public class Main extends Application {
             )
         );
 
-        HBox buttonHBox = new HBox( btnLoans, btn );
+        HBox buttonHBox = new HBox( btnLoans, btnUsers );
         buttonHBox.setSpacing( 8 );
 
         VBox vbox = new VBox( tblBooks, buttonHBox );
@@ -74,10 +81,11 @@ public class Main extends Application {
 
         primaryStage.setTitle("Available Books");
         primaryStage.setScene( scene );
-        primaryStage.setHeight( 720 );
+        primaryStage.setHeight( 650 );
         primaryStage.setWidth( 1280 );
         primaryStage.show();
     }
+    //main method to launch the JavaFX application
     public static void main( String[] args ){
         launch(args);
     }
