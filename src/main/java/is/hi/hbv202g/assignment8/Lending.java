@@ -11,6 +11,7 @@ public class Lending {
 		dueDate = LocalDate.now().plusDays(30);
 		this.book = book;
 		this.user = user;
+		book.setAvailable(false);
 	}
 	public LocalDate getDueDate() {
 		return dueDate;
@@ -30,5 +31,4 @@ public class Lending {
 	public void setUser(User user) {
 		this.user = user;
 	}
-	
 }

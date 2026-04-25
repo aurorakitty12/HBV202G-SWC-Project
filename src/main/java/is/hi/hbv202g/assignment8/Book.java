@@ -36,6 +36,15 @@ public class Book {
         }
         return authors;
     }
+    public Author getAuthor(int index) throws EmptyAuthorListException {
+        if (authors == null || authors.isEmpty()) {
+            throw new EmptyAuthorListException("Author list is empty");
+        }
+        if (index < 0 || index >= authors.size()) {
+            throw new IndexOutOfBoundsException("Author index out of bounds");
+        }
+        return authors.get(index);
+    }
 
     public void setAuthors(ArrayList<Author> authors) {
         this.authors = authors;

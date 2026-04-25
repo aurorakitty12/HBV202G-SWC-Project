@@ -42,14 +42,14 @@ public class Main extends Application {
             new Book("1984", "George Orwell", true)
         );
 
-        Button btnInventory = new Button("Inventory");
-        Button btnCalcTax = new Button("Tax");
+        Button btnLoans = new Button("Inventory");
+        Button btn = new Button("Tax");
 
-        btnInventory.disableProperty().bind(
+        btnLoans.disableProperty().bind(
             tblBooks.getSelectionModel().selectedItemProperty().isNull()
         );
 
-        btnCalcTax.disableProperty().bind(
+        btn.disableProperty().bind(
             tblBooks.getSelectionModel().selectedItemProperty().isNull().or(
                     Bindings.select(
                         tblBooks.getSelectionModel().selectedItemProperty(),
@@ -58,7 +58,7 @@ public class Main extends Application {
             )
         );
 
-        HBox buttonHBox = new HBox( btnInventory, btnCalcTax );
+        HBox buttonHBox = new HBox( btnLoans, btn );
         buttonHBox.setSpacing( 8 );
 
         VBox vbox = new VBox( tblBooks, buttonHBox );
