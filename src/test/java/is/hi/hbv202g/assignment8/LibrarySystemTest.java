@@ -7,9 +7,8 @@ public class LibrarySystemTest {
     @Test
     public void shouldBePossibleToAddBookToLibrarySystem() throws UserOrBookDoesNotExistException{
         LibrarySystem librarySystem = new LibrarySystem();
-        Book book = new Book("The Great Gatsby", "F. Scott Fitzgerald", true);
-        librarySystem.addBook(book);
-        assertEquals(book.getTitle(), librarySystem.findBookByTitle("The Great Gatsby").getTitle());
+        librarySystem.addBook("The Great Gatsby", "F. Scott Fitzgerald", true);
+        assertEquals("The Great Gatsby", librarySystem.findBookByTitle("The Great Gatsby").getTitle());
     }
         @Test
     public void shouldBePossibleToAddUserToLibrarySystem() throws UserOrBookDoesNotExistException{
@@ -20,7 +19,7 @@ public class LibrarySystemTest {
         @Test
     public void shouldBePossibleToBorrowAndReturnBook() throws UserOrBookDoesNotExistException, BookNotAvailableException {
         LibrarySystem librarySystem = new LibrarySystem();
-        librarySystem.addBook(new Book("The Great Gatsby", "F. Scott Fitzgerald", true));
+        librarySystem.addBook("The Great Gatsby", "F. Scott Fitzgerald", true);
         librarySystem.addStudentUser("John Student", true);
         librarySystem.BorrowBook("John Student", "The Great Gatsby");
         assertFalse(librarySystem.findBookByTitle("The Great Gatsby").isAvailable());

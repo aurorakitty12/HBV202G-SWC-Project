@@ -16,6 +16,9 @@ import javafx.beans.binding.Bindings;
 
 public class Main extends Application {
 
+    LibrarySystem myLibrarySystem = new LibrarySystem();
+    
+
 @Override
     public void start(Stage primaryStage) throws Exception {
 
@@ -73,9 +76,7 @@ public class Main extends Application {
         primaryStage.setWidth( 1280 );
         primaryStage.show();
     }
-    public static void main( String[] args )
-    {
-        LibrarySystem myLibrarySystem = new LibrarySystem();
+    public static void main( String[] args ){
         launch(args);
     }
 }

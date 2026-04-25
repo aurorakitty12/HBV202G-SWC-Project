@@ -9,7 +9,7 @@ public class EmptyAuthorListExceptionTest {
     public void shouldThrowEmptyAuthorListExceptionWhenGettingAuthorFromEmptyList() throws EmptyAuthorListException {
         Book book = new Book(); //Create a book with no title and no authors
         assertThrows(EmptyAuthorListException.class, () -> {
-            book.getAuthor(0);
+            book.getAuthor();
         });
     }
 }

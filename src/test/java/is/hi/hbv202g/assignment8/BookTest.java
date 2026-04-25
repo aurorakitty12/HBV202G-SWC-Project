@@ -9,7 +9,7 @@ public class BookTest {
     public void shouldBePossibleToInstantiateBook() throws EmptyAuthorListException {
         Book book = new Book("The Great Gatsby", "F. Scott Fitzgerald", true);
         assertEquals("The Great Gatsby", book.getTitle());
-        assertEquals("F. Scott Fitzgerald", book.getAuthor(0).getName());
+        assertEquals("F. Scott Fitzgerald", book.getAuthor());
         assertTrue(book.isAvailable());
     }
 }

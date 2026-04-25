@@ -10,10 +10,8 @@ public class LibrarySystem {
 	
 	public LibrarySystem() {}
 	
-	public void addBookWithTitleAndAuthorList(String title, ArrayList<Author> authors) {
-		books.add(new Book( /**/ ));
-	}
-	public void addBook(Book book) {
+	public void addBook(String title, String author, boolean available) {
+		Book book = new Book(title, author, available);
 		books.add(book);
 	}
 	public void addStudentUser(String name, boolean feePaid) {
