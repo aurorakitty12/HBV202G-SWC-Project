@@ -17,7 +17,11 @@ import javafx.beans.binding.Bindings;
 public class Main extends Application {
 
     LibrarySystem myLibrarySystem = new LibrarySystem();
-    
+    Book book1 = new Book("The Great Gatsby", "F. Scott Fitzgerald", true);
+    Book book2 = new Book("To Kill a Mockingbird", "Harper Lee", true);
+    Book book3 = new Book("1984", "George Orwell", true);
+
+
 
 @Override
     public void start(Stage primaryStage) throws Exception {
@@ -40,9 +44,7 @@ public class Main extends Application {
         );
 
         tblBooks.getItems().addAll(
-            new Book("The Great Gatsby", "F. Scott Fitzgerald", true),
-            new Book("To Kill a Mockingbird", "Harper Lee", true),
-            new Book("1984", "George Orwell", true)
+
         );
 
         Button btnLoans = new Button("Inventory");

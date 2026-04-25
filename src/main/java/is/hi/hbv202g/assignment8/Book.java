@@ -33,7 +33,7 @@ public class Book {
         return available;
     }
 
-    public void setAvailable(boolean available) {
+    public void setAvailability(boolean available) {
         this.available = available;
     }
 }

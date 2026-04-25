@@ -23,11 +23,11 @@ public class LibrarySystemTest {
         librarySystem.addStudentUser("John Student", true);
         librarySystem.BorrowBook("John Student", "The Great Gatsby");
         assertFalse(librarySystem.findBookByTitle("The Great Gatsby").isAvailable());
-        assertTrue(librarySystem.searchLendingByUserAndBook(librarySystem.findUserByName("John Student"), 
+        assertTrue(librarySystem.findLendingByUserAndBook(librarySystem.findUserByName("John Student"), 
         librarySystem.findBookByTitle("The Great Gatsby")) != null);
         librarySystem.returnBook("John Student", "The Great Gatsby");
         assertTrue(librarySystem.findBookByTitle("The Great Gatsby").isAvailable());
-        assertTrue(librarySystem.searchLendingByUserAndBook(librarySystem.findUserByName("John Student"),
+        assertTrue(librarySystem.findLendingByUserAndBook(librarySystem.findUserByName("John Student"),
         librarySystem.findBookByTitle("The Great Gatsby")) == null);
     }
 }

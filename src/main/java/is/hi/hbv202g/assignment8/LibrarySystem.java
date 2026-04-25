@@ -54,7 +54,7 @@ public class LibrarySystem {
             }
         }
     }
-	public Lending searchLendingByUserAndBook(User user, Book book) {
+	public Lending findLendingByUserAndBook(User user, Book book) {
 		for (Lending lending : lendings) {
 			if (lending.getUser() == user && lending.getBook() == book) {
 				return lending;
@@ -67,6 +67,6 @@ public class LibrarySystem {
         User user = findUserByName(userName);
         Book book = findBookByTitle(bookTitle);
         lendings.removeIf(lending -> lending.getUser() == user && lending.getBook() == book);
-		book.setAvailable(true);
+		book.setAvailability(true);
     }
 }
