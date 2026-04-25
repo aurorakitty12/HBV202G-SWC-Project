@@ -1,4 +1,4 @@
-# HBV202GAssignment8
+# HBV202G SWC Project
 A Maven project skeleton. The provided Maven POM sets the Java version to 21.
 
 This project skeleton is an extension of the library system from assignment 8. You can find the UML class diagram for the library system in the `UML` directory. ![UML class diagram](UML/LibrarySystem_UML.png)
@@ -7,8 +7,9 @@ This project skeleton is an extension of the library system from assignment 8. Y
 
 [Documentation site from maven site](target/site/index.html) 
 
+[JAR file](target/HBV202G-SWC-Project-2.0.0.jar)
 
-Maven commands:
+
 
 - `mvn compile` compiles all implementation classes.
 - `mvn exec:java` executes the `main` method of the implementation.
