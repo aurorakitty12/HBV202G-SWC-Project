@@ -5,12 +5,21 @@ import java.util.ArrayList;
 public class Book {
     private String title;
     private ArrayList<Author> authors;
+    private boolean available;
 
     public Book() {}
 
-    public Book(String title, ArrayList<Author> authors) {
+    public Book(String title, ArrayList<Author> authors, boolean available) {
         this.title = title;
         this.authors = authors;
+        this.available = available;
+    }
+
+        public Book(String title, String author, boolean available) {
+        this.title = title;
+        this.authors = new ArrayList<Author>();
+        this.authors.add(new Author(author));
+        this.available = available;
     }
 
     public String getTitle() {
@@ -39,4 +48,11 @@ public class Book {
         authors.add(author);
     }
 
+    public boolean isAvailable() {
+        return available;
+    }
+
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
 }
